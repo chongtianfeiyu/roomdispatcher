@@ -58,7 +58,7 @@ int32_t CUpdateVipNotiEvent::UpdateMemVipLevel(RoleID nRoleID, VipLevel nVipLeve
 		WRITE_ERROR_LOG("update vip level:get player error{nRet=%d}", nRet);
 		return E_NULLPOINTER;
 	}
-	if(nVipLevel > enmVipLevel_TIP)
+	if(nVipLevel > enmVipLevel_King)
 	{
 		return S_OK;
 	}
